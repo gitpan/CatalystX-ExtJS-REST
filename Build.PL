@@ -40,7 +40,7 @@ my %module_build_args = (
     'Moritz Onken <onken@netcubed.de>'
   ],
   'dist_name' => 'CatalystX-ExtJS-REST',
-  'dist_version' => '2.1.0',
+  'dist_version' => '2.1.1',
   'license' => 'bsd',
   'module_name' => 'CatalystX::ExtJS::REST',
   'recommends' => {},
@@ -52,7 +52,7 @@ my %module_build_args = (
     'Catalyst::Action::RenderView' => '0',
     'Catalyst::Controller::REST' => '0',
     'Catalyst::Runtime' => '5.80024',
-    'CatalystX::ExtJS::Direct' => '0',
+    'CatalystX::ExtJS::Direct' => '2.1.4',
     'Config::Any' => '0',
     'DBIx::Class' => '0.08127',
     'HTML::Entities' => '0',

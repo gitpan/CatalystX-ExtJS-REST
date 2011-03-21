@@ -5,6 +5,7 @@ MANIFEST
 META.json
 META.yml
 README
+README.pod
 benchmark/rest.pl
 dist.ini
 lib/CatalystX/Action/ExtJS/REST.pm
@@ -39,7 +40,6 @@ t/release-kwalitee.t
 t/release-minimum-version.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
-t/release-portability.t
 t/rest/exception.t
 t/rest/findordefault.t
 t/rest/for_browser.t

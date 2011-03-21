@@ -9,7 +9,7 @@
 #
 package CatalystX::Controller::ExtJS::REST;
 BEGIN {
-  $CatalystX::Controller::ExtJS::REST::VERSION = '2.1.0';
+  $CatalystX::Controller::ExtJS::REST::VERSION = '2.1.1';
 }
 # ABSTRACT: RESTful interface to dbic objects
 
@@ -278,7 +278,7 @@ sub paging_rs {
 
     return $rs if($start == 0 && $limit == 0);
 
-    my @direction = grep { $_ eq (lc($params->{dir}) || 'asc') } qw(asc desc);
+    my @direction = grep { $_ eq (lc($params->{dir} || 'asc')) } qw(asc desc);
     my $direction = q{-}.(shift @direction);
     
     my $sort = $params->{sort} || $self->order_by || undef;
@@ -599,7 +599,7 @@ CatalystX::Controller::ExtJS::REST - RESTful interface to dbic objects
 
 =head1 VERSION
 
-version 2.1.0
+version 2.1.1
 
 =head1 SYNOPSIS
 

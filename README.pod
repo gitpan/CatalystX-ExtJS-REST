@@ -1,32 +1,10 @@
-#
-# This file is part of CatalystX-ExtJS-REST
-#
-# This software is Copyright (c) 2011 by Moritz Onken.
-#
-# This is free software, licensed under:
-#
-#   The (three-clause) BSD License
-#
 package CatalystX::ExtJS::REST;
-BEGIN {
-  $CatalystX::ExtJS::REST::VERSION = '2.1.1';
-}
 
 # ABSTRACT: Feature-rich REST controller for use with ExtJS
 
 1;
 
-
-
-=pod
-
-=head1 NAME
-
-CatalystX::ExtJS::REST - Feature-rich REST controller for use with ExtJS
-
-=head1 VERSION
-
-version 2.1.1
+__END__
 
 =head1 SYNOPSIS
 
@@ -46,6 +24,7 @@ version 2.1.1
  
  1;
 
+
 =head1 DESCRIPTION
 
 This module adds feature-rich REST controllers to your application.
@@ -55,6 +34,7 @@ all configuration options.
 
 Have a look at the L<tutorial|CatalystX::ExtJS::Tutorial::Direct>
 which shows integration of this controller with L<CatalystX::ExtJS::Direct>.
+
 
 =head1 SEE ALSO
 
@@ -69,21 +49,3 @@ Parent namespace. Includes examples and the code for the tutorial.
 Enable Ext.Direct in Catalyst controllers.
 
 =back
-
-=head1 AUTHOR
-
-Moritz Onken <onken@netcubed.de>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is Copyright (c) 2011 by Moritz Onken.
-
-This is free software, licensed under:
-
-  The (three-clause) BSD License
-
-=cut
-
-
-__END__
-

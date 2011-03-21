@@ -9,7 +9,7 @@
 #
 package CatalystX::Action::ExtJS::REST;
 BEGIN {
-  $CatalystX::Action::ExtJS::REST::VERSION = '2.1.0';
+  $CatalystX::Action::ExtJS::REST::VERSION = '2.1.1';
 }
 # ABSTRACT: Mark an action as REST endpoint
 use Moose;
@@ -27,7 +27,7 @@ CatalystX::Action::ExtJS::REST - Mark an action as REST endpoint
 
 =head1 VERSION
 
-version 2.1.0
+version 2.1.1
 
 =head1 DESCRIPTION
 
