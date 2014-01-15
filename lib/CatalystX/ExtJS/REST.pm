@@ -1,24 +1,23 @@
 #
 # This file is part of CatalystX-ExtJS-REST
 #
-# This software is Copyright (c) 2011 by Moritz Onken.
+# This software is Copyright (c) 2014 by Moritz Onken.
 #
 # This is free software, licensed under:
 #
 #   The (three-clause) BSD License
 #
 package CatalystX::ExtJS::REST;
-BEGIN {
-  $CatalystX::ExtJS::REST::VERSION = '2.1.1';
-}
-
+$CatalystX::ExtJS::REST::VERSION = '2.1.3';
 # ABSTRACT: Feature-rich REST controller for use with ExtJS
 
 1;
 
-
+__END__
 
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -26,7 +25,7 @@ CatalystX::ExtJS::REST - Feature-rich REST controller for use with ExtJS
 
 =head1 VERSION
 
-version 2.1.1
+version 2.1.3
 
 =head1 SYNOPSIS
 
@@ -76,14 +75,10 @@ Moritz Onken <onken@netcubed.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Moritz Onken.
+This software is Copyright (c) 2014 by Moritz Onken.
 
 This is free software, licensed under:
 
   The (three-clause) BSD License
 
 =cut
-
-
-__END__
-

@@ -1,18 +1,15 @@
 #
 # This file is part of CatalystX-ExtJS-REST
 #
-# This software is Copyright (c) 2011 by Moritz Onken.
+# This software is Copyright (c) 2014 by Moritz Onken.
 #
 # This is free software, licensed under:
 #
 #   The (three-clause) BSD License
 #
 package CatalystX::Controller::ExtJS::REST;
-BEGIN {
-  $CatalystX::Controller::ExtJS::REST::VERSION = '2.1.1';
-}
 # ABSTRACT: RESTful interface to dbic objects
-
+$CatalystX::Controller::ExtJS::REST::VERSION = '2.1.3';
 use Moose;
 extends qw(Catalyst::Controller::REST);
 use MooseX::MethodAttributes;
@@ -24,7 +21,7 @@ use HTML::FormFu::ExtJS 0.076;
 use Path::Class;
 use HTML::Entities;
 use Lingua::EN::Inflect;
-use JSON::Any;
+use JSON;
 use Try::Tiny;
 
 use Moose::Util::TypeConstraints;
@@ -560,7 +557,7 @@ sub end {
           )
           || 'rest';
         my $output;
-        eval { $output = JSON::Any->new->encode( $c->stash->{$stash_key} ); };
+        eval { $output = encode_json( $c->stash->{$stash_key} ); };
 
         $c->res->content_type('text/html');
         $c->res->output( encode_entities($output) );
@@ -589,9 +586,11 @@ sub _parse_NSListPathPart_attr {
 
 1;
 
-
+__END__
 
 =pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -599,7 +598,7 @@ CatalystX::Controller::ExtJS::REST - RESTful interface to dbic objects
 
 =head1 VERSION
 
-version 2.1.1
+version 2.1.3
 
 =head1 SYNOPSIS
 
@@ -1053,14 +1052,10 @@ Moritz Onken <onken@netcubed.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Moritz Onken.
+This software is Copyright (c) 2014 by Moritz Onken.
 
 This is free software, licensed under:
 
   The (three-clause) BSD License
 
 =cut
-
-
-__END__
-
